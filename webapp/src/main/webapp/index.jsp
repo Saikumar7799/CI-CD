@@ -1,24 +1,17 @@
 <html>
 <body>
-<h1>Welcome To Hyderabad</h1>
-<h2>This is the sample Web Application created Saikumar</h2> 
+<h1>Hello-World</h1> 
 </body>
 <body style="color:green;">
- <div class="container">
-    <label for="uname"><b>Username:    </b></label>
-    <input type="text" placeholder="UserName" name="uname" required>
-<br></br>
-    <label for="psw"><b>Password:     </b></label>
-    <input type="password" placeholder="Password" name="psw" required>
-<br></br>
-   <button type="submit">Login</button>
-   <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
 <style>
-body {background-color: Gold;}
-
+body {background-color: #1E90FF;}
+p
+{
+  color:#DAEE01;
+}
 h1
 {
-  color:magenta;
+  color:#7E3817;
   text-align:center;
 }
 h2
@@ -27,8 +20,32 @@ h2
   text-align:center;
 }
 
+h1 {text-align: center;}
+
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-30%, -30%);
+  transform: translate(-50%, -50%);
+}
 
 </style>
   </div>
+<div class="container">
+  <div class="center">
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+<b>Click and Refresh me to display Date and Time</b></button>
+<b><p id="demo"></p></b>
+</div>
+</div>
 </body>
 </html>
